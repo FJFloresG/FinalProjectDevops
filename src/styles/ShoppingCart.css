@@ -1,0 +1,167 @@
+.pageShoppingCart {
+    min-height: 100dvh;
+    background-color: #fffdca;
+}
+
+.logoConTexto img {
+    width: 12dvw;
+    margin-top: 50px;
+}
+
+.contenedorShoppingCart {
+    margin: 2dvh 10dvw 0 10dvw;
+}
+
+.contenedor {
+    
+    background-color: #60a76c;
+    border: 1px solid #000;
+    border-radius: 0 0 2em 2em;
+    min-height: 50dvh;
+}
+
+.tituloContenedor {
+    margin-top: 50px;
+    color: #fff;
+    background-color: #487c51;
+    padding: 1px;
+    border: 1px solid #000;
+    border-radius: 2em 2em 0 0;
+    margin-top: 110px;
+}
+
+.tituloTabla {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    padding: .5em .8em;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.shoppingCart {
+    overflow-y: scroll;
+    background-color: #fffdca;
+    margin: 0 3dvh;
+    height: 30dvh;
+    /*border-radius: 2em 0 0 2em;
+    padding: .5em .9em;*/
+}
+
+.shoppingCart::-webkit-scrollbar {
+    width: 5px;
+}
+
+.shoppingCart::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+}
+
+.shoppingCart::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.detalleItem {
+    background-color: #fff;
+    border-radius: .5em;
+}
+
+.subtotalItem {
+    background-color: #fff;
+}
+
+.xItem {
+    width: 1.2em;
+    transition: .2s ease;
+}
+
+.xItem:hover {
+    cursor: pointer;
+    transform: scale(.8);
+}
+
+.imagenShoppingCart {
+    height: 5dvh;
+    margin: 0 auto;
+}
+
+.resultItem {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+
+.resultItem button {
+    width: 25dvw;
+}
+
+.totalItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.5;
+}
+
+.totalItems span {
+    margin: 0 .5em;
+}
+
+.totalItems .resultados {
+    background-color: #fff;
+    padding: .5em 2em;
+    border-radius: 15px;
+}
+.botonRegresar {
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 40px;
+    left: 40px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación suave al cambiar de color */
+}
+
+.botonRegresar:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.botonRegresar img {
+    width: 24px; /* Ajusta el tamaño de la imagen */
+    height: 24px; /* Ajusta el tamaño de la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen */
+}
+
+
+@media (max-width: 900px) {
+    .logoConTexto img {
+        width: 20dvw;
+    }
+}
+
+@media (max-width: 550px) {
+    .logoConTexto img {
+        width: 30dvw;
+    }
+}
+
+@media (max-width: 400px) {
+    .logoConTexto img {
+        width: 40dvw;
+    }
+    span{
+        font-size: 12px;
+    }
+}
